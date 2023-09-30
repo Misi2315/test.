@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BestBuy</title>
+    <!-- Google Fonts beillesztése -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Viewport meta-címke -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Egyéb CSS fájl beillesztése (asd.css)(mobile.css) -->
+    <link rel="stylesheet" href="asd.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <!-- Fejléc (header) -->
+    <div class="header">
+        <div class="container">
+            <!-- Navigációs sáv -->
+            <div class="navbar">
+                <!-- BestBuy logó -->
+                <div class="logo">
+                    <a href=""><img src="logo5.png" width="260px"></a>
+                </div>
+                <!-- Menüpontok (Home, Products, About, Contact, Account) -->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href=""><font size="5"><u>Home</u></font></a></li>
+                        <li><a href=""><font size="5"><u>Products</u></font></a></li>
+                        <li><a href=""><font size="5"><u>About</u></font></a></li>
+                        <li><a href=""><font size="5"><u>Contact</u></font></a></li>
+                        <li><a href=""><font size="5"><u>Account</u></font></a></li>
+                    </ul>
+                </nav>
+                <!-- Kosár és menü ikonok -->
+                <img src="cart.png" width="30px" height="30px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <!-- Fő tartalom sorai -->
+            <div class="row">
+                <!-- Bal oldali tartalom -->
+                <div class="col-2">
+                    <h1>Browse To Find The Right One For You!</h1>
+                    <p><font color="282828">There are many things that you will like. Take a look around, <br> and choose the one that suits you best.</font></p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <!-- Jobb oldali tartalom (kép) -->
+                <div class="col-2">
+                    <img src="bolt.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kategóriák megjelenítése -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3"><img src="xiaomi.jpg"></div>
+                <div class="col-3"><img src="tuz.jpg"></div>
+                <div class="col-3"><img src="parfum.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Kiemelt termékek megjelenítése -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <!-- Termék #1 -->
+            <div class="col-4">
+                <img src="gyujto.jpg">
+                <h4>Rocker Arm Automatic Lighter</h4>
+                <p><font color="#008004">14.99€</font></p>
+            </div>
+            <!-- Termék #2 -->
+            <div class="col-4">
+                <img src="kanal.jpg">
+                <h4>Electronic Kitchen Scale</h4>
+                <p><font color="#008004">12,00€</font></p>
+            </div>
+            <!-- Termék #3 -->
+            <div class="col-4">
+                <img src="usb.jpg">
+                <h4>USB Hub 2.0 Multi Splitter</h4>
+                <p><font color="#008004">12.50€</font></p>
+            </div>
+            <!-- Termék #4 -->
+            <div class="col-4">
+                <img src="xiaomi.jpg">
+                <h4>Xiaomi Mi True Wireless Earbuds Basic 2</h4>
+                <p><font color="#008004">20.00€</font></p>
+            </div>
+        </div>
+    </div>
+    <!-- Legújabb termékek megjelenítése -->
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <!-- Itt jönnek a legújabb termékek hasonló elrendezésben -->
+    </div>
+    <!-- Kiemelt ajánlat megjelenítése -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="xora.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p><font color="#008004"> Exclusively Available on BestBuy</font></p>
+                    <h1>Mi Band 5</h1>
+                    <small><font color="#008004">The Xiaomi Mi Band 5 features a 39.9% larger (than Mi Band 3) AMOLED color  full-touch display with adjustable brightness, so everything is clear as can be. <br></font><font color="#505050">This is the waterproof smartwatch from Xiaomi.</font></small>
+                    <br>
+                    <a href="" class="btn">Buy now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Szponzorok megjelenítése -->
+    <div class="sponsors">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>Sponsors</h1>
+                    <p><font color="505050">There are currently no sponsors</font></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lábléc (footer) -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- App letöltési lehetőségek -->
+                <div class="footer-col-1">
+                    <h3><font color="#27702C">Download Our App</font></h3>
+                    <p><font color="#fff"> Download App for Android and ios mobile phone.</font></p>
+                    <div class="app-logo">
+                        <img src="play-store.png" width="40%">
+                        <img src="app-store.png" width="40%">
+                    </div>
+                </div>
+                <!-- Támogatás információk -->
+                <div class="footer-col-4">
+                    <h3><font color="#27702C">Support Us</font></h3> <br>
+                    <ul>
+                        <li><font color="#fff">Our Purpose is to reach as many people to visit BestBuy as possible. <br><br>If you think so, help and share the website😉.</font></a></li>
+                        <br>
+                    </ul>
+                </div>
+                <!-- Hasznos linkek -->
+                <div class="footer-col-3">
+                    <h3><font color="#27702C">Useful Links</font></h3> <br>
+                    <ul>
+                        <li><a href=""><font color="#fff">Coupons</font></a></li>
+                        <br>
+                        <li><a href=""><font color="#fff">Blog Post</font></a></li>
+                        <br>
+                        <li><a href=""><font color="#fff">Return Policy</font></a></li>
+                        <br>
+                        <li><a href=""><font color="#fff">Join Affiliate</font></a></li>
+                    </ul>
+                </div>
+                <!-- Kövess minket közösségi médiában -->
+                <div class="footer-col-4">
+                    <h3><font color="#27702C">Follow us</font></h3> <br>
+                    <ul>
+                        <li><a href=""><font color="#fff">Instagram</font></a></li>
+                        <br>
+                        <li><a href=""><font color="#fff">Tiktok</font></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2025 - BestBuy</p>
+        </div>
+    </div>
+    <!-- Menü ikonra kattintásra menü megnyitása/zárása -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px");
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>

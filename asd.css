@@ -1,0 +1,299 @@
+/* Alapértelmezett stílusok az összes elemhez */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alap stílus a teljes oldalhoz */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* A navigációs sáv stílusa */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* A navigációs menü stílusa */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* A navigációs menü listájának stílusa */
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* A navigációs menü listaelemeinek stílusa */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* A linkek stílusa */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* P szövegek stílusa */
+p {
+    color: #fff;
+}
+
+/* A tartalom konténer stílusa */
+.container {
+    max-width: 1700px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* A sorok stílusa */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* A 2 oszlopos elemek stílusa */
+.col-2 {
+    flex-basis: 30%;
+    min-width: 300px;
+}
+
+/* A 2 oszlopos elemek képének stílusa */
+.col-2 img {
+    max-width: 140%;
+    padding: 50px 0;
+}
+
+/* A 2 oszlopos elemek címének stílusa */
+.col-2 h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+/* Gomb stílusa */
+.btn {
+    display: inline-block;
+    background: #27702C;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/* Gomb hover stílusa */
+.btn:hover {
+    background: #043607;
+}
+
+/* A fejléc stílusa */
+.header {
+    background: radial-gradient(#fff, #27702C);
+    height: 100vh; /* Hozzáadott szabály */
+}
+
+/* A fejléc sorának stílusa */
+.header .row {
+    margin-top: 10px;
+}
+
+/* 4 oszlopos elemek stílusa */
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+/* 4 oszlopos elemek képének stílusa */
+.col-4 img {
+    width: 100%;
+}
+
+/* Kategóriák stílusa */
+.categories {
+    margin: 70px 0;
+}
+
+/* 3 oszlopos elemek stílusa */
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+/* 3 oszlopos elemek képének stílusa */
+.col-3 img {
+    width: 100%;
+}
+
+/* Kis konténer stílusa */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Cím stílusa */
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #282828;
+}
+
+/* Cím utáni dísz stílusa */
+.title::after {
+    content: '';
+    background: #27702C;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+/* H4 stílusa */
+h4 {
+    color: #282828;
+    font-weight: normal;
+}
+
+/* 4 oszlopos elemek szövegének stílusa */
+.col-4 p {
+    font-size: 14px;
+}
+
+/* 4 oszlopos elemek hover stílusa */
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajánlat stílusa */
+.offer {
+    background: radial-gradient(#fff, #4E4E4E);
+    margin-top: 80px;
+    padding: 100px 0;
+}
+
+/* 2 oszlopos elemek ajánlat képének stílusa */
+.col-2 .offer-img {
+    padding: 1px;
+}
+
+/* Márkák stílusa */
+.brands {
+    margin: 100px auto;
+}
+
+/* 5 oszlopos elemek stílusa */
+.col-5 {
+    width: 160px
+}
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+/* 5 oszlopos elemek képének hover stílusa */
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+/* Alsó rész stílusa */
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+/* Alsó rész szövegeinek stílusa */
+.footer p {
+    color: #8a8a8a;
+}
+
+/* Alsó rész oszlopok stílusa */
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+/* Számozatlan lista stílusa */
+ul {
+    list-style-type: none;
+}
+
+/* Alkalmazás logo stílusa */
+.app-logo {
+    margin-top: 21px;
+}
+.app-logo img {
+    width: 140px
+}
+
+/* Alsó rész elválasztóvonal stílusa */
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+/* Szerzői jog stílusa */
+.copyright {
+    text-align: center;
+}
+
+/* Menü ikon stílusa */
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Responszív médiaméret alatt */
+@media only screen and (max-width: 800px) {
+    /* Navigációs menü pozíciója és stílusa */
+    nav ul {
+        position: absolute;
+        top: 115px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    /* Menü ikon megjelenítése */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,78 @@
+/* Telefonspecifikus stílusok - 16:9 és 18:9 képarány */
+
+@media only screen and (max-width: 375px) {
+  /* Kisebb képernyő szélessége (pl. iPhone 11) */
+  /* A navigációs menüt a bal felső sarokba helyezzük */
+  .navbar {
+    padding: 10px;
+  }
+  nav {
+    text-align: left;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    padding: 10px;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #MenuItems.maxHeight {
+    max-height: 100%;
+    transition: max-height 0.3s ease-in;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  /* Közepes képernyő szélessége (pl. iPhone 12) */
+  /* A navigációs menüt a bal felső sarokba helyezzük */
+  .navbar {
+    padding: 15px;
+  }
+  nav ul {
+    top: 80px;
+  }
+}
+
+/* További médiakérések és stílusok hozzáadhatók az egyéb képernyőméretekhez */
+
+/* Általános stílusok */
+/* ... */
+
+/* Responszív médiaméret alatt */
+@media only screen and (max-width: 800px) {
+  /* Navigációs menü pozíciója és stílusa */
+  nav ul {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    background: #333;
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  /* Menü ikon megjelenítése */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
